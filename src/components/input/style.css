@@ -1,0 +1,24 @@
+.input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.input-componnet {
+  height: 26px;
+  min-width: 300px;
+  border-radius: 6px;
+}
+
+.input-label {
+  font-size: 18px;
+  font-weight: bold;
+  color: black;
+  display: block;
+}
+
+.error-text {
+  margin: 0;
+  font-size: 16px;
+  color: red;
+}

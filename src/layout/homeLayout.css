@@ -1,0 +1,81 @@
+.container {
+  display: flex;
+  height: 97vh;
+  width: 100%;
+  overflow-y: hidden;
+}
+.sideNav {
+  width: 16vw;
+  height: 100%;
+  background-image: linear-gradient(
+    to bottom,
+    #1661a1,
+    #504f8e,
+    #683c74,
+    #702c55,
+    #6c2137
+  );
+}
+
+.sideNav .logo {
+  width: 15vw; /* Set the width of the logo */
+  height: 10vh; /* Maintain aspect ratio */
+  margin-bottom: 20px;
+}
+
+.sideNav .logo img {
+  width: 100%;
+  height: 100%;
+}
+
+.sideNav .types {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: auto;
+  padding-left: 20px;
+}
+
+.sideNav .types a {
+  color: #fff;
+}
+.sideNav .types a,
+.main-container .top-nav .types a {
+  position: relative;
+  overflow: hidden;
+  font-size: 20px;
+  color: #fff;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  background-color: #c4c4c4;
+}
+
+.main-container .top-nav {
+  width: 100%;
+  height: 10vh !important;
+  display: block;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-image: linear-gradient(
+    to bottom,
+    #1661a1,
+    #504f8e,
+    #683c74,
+    #702c55,
+    #6c2137
+  );
+}
+.main-container .top-nav .types {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 50px;
+  padding-inline: 20px;
+}

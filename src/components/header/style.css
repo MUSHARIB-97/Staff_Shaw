@@ -1,0 +1,75 @@
+.container {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+}
+
+.sideNav,
+.topNav {
+  display: flex;
+  padding: 0 10px;
+  box-shadow: 10px 12px 14px rgba(231, 3, 3, 0.2);
+}
+
+.sideNav {
+  background-color: #333;
+  width: 200px;
+  height: 100vh;
+  display: block;
+}
+
+.topNav {
+  background-color: #333;
+  height: 10vh;
+  flex: 1;
+  justify-content: flex-end;
+  align-items: center;
+  padding-inline: 20px;
+}
+
+.sideNav a,
+.topNav a {
+  text-decoration: none;
+  color: white;
+}
+
+.logo {
+  width: 15vw; /* Set the width of the logo */
+  height: 10vh; /* Maintain aspect ratio */
+  margin-bottom: 20px;
+}
+
+.logo img {
+  width: 100%;
+  height: 100%;
+}
+
+.types {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: auto;
+  padding-left: 20px;
+}
+
+.types p {
+  position: relative;
+  overflow: hidden;
+  font-size: 20px;
+}
+
+.types p::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #6c2137;
+  transition: width 0.5s ease;
+}
+
+.types p:hover::before {
+  width: 100%;
+}
